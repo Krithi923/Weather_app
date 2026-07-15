@@ -1,6 +1,8 @@
 # Weather Today 🌤️
 
-I built a clean, responsive weather web application using React and Vite. The app fetches real-time data from the OpenWeatherMap API and features a dynamic UI—the background gradient changes automatically depending on whether the searched city is clear, cloudy, rainy, or snowy.
+I built a clean, responsive weather web application using React and Vite. The app fetches real-time data from the OpenWeatherMap API and features a dynamic UI—the background gradient changes automatically depending on whether the searched city is clear, cloudy, rainy.
+
+Live Demo: [View Live Application](https://krithi923.github.io/Weather_app/) 
 
 ---
 
