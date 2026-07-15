@@ -1,0 +1,14 @@
+.date{
+    display: block;
+    width: 200px;
+    height: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.date h3{
+    color: white;
+    font-size: 17px;
+    
+}

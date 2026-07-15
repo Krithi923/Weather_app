@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Manrope:wght@200..800&family=Montenegrin+Gothic+One&family=Outfit:wght@100..900&display=swap');
+
+
+.temperature{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    height: 150px;
+
+}
+.col{
+    width: 200px;
+  height: 100%;
+   display: flex;
+  flex-direction: column;  
+  justify-content: center;  
+  align-items: center;     
+  text-align: center;
+    
+}
+.left,.right{
+    margin: 10px 10px;
+}
+.high h2,.low h2{
+    margin-bottom: 10px;
+    color: white;
+    font-family:'Montenegrin Gothic One';
+    font-size: 25px;
+
+}
+
+.high h3,.low h3{
+    
+    color: white;
+    font-family:'Montenegrin Gothic One';
+    font-size: 20px;
+
+}

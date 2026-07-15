@@ -1,0 +1,50 @@
+
+ 
+.SearchContainer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    
+   
+  
+}
+.SearchContainer input{
+    padding: 10px;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family:'Montenegrin Gothic One';
+    font-size: 20px;
+    width: 70%;
+    background: transparent;
+    color: white;
+}
+
+.SearchContainer input:focus {
+  outline: none;
+}
+
+.SearchContainer input::placeholder{
+    color: aliceblue;
+    font-family:'Montenegrin Gothic One';
+
+}
+.btn{
+    margin-left: 10px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    color: rgb(12, 7, 71);
+    background-color: azure;
+    border-radius: 20px;
+    font-family:'Montenegrin Gothic One';
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.btn:hover{
+    color: white;
+    background-color: rgb(12, 7, 71) ;
+}
