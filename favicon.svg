@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <!-- Soft 3D Cloud Gradient matching the picture -->
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="65%" stop-color="#D1E6F7" />
+      <stop offset="100%" stop-color="#8BBCE4" />
+    </linearGradient>
+  </defs>
+
+  <!-- The Cloud Path -->
+  <path fill="url(#cloudGrad)" 
+        stroke="#5982A8" 
+        stroke-width="0.75" 
+        stroke-linejoin="round"
+        d="M5.35 10.23a2.7 2.7 0 0 1 5.37-.1c.32-.07.64-.1.97-.1a2.3 2.3 0 0 1 2.22 2.91A1.7 1.7 0 0 1 15 14.5H3.72A1.9 1.9 0 0 1 2 12.59a1.9 1.9 0 0 1 1.93-1.92c.43 0 .85.11 1.21.31-.03-.25-.04-.51-.04-.75h.25Z" />
+</svg>
