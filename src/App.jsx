@@ -10,28 +10,32 @@ import { useState,useEffect } from 'react'
 const App = () => {
   const [location,setLocation]=useState("London");
   const [weatherData, setWeatherData] = useState(null);
+  const [error, setError] = useState(""); 
 
- const getWeatherData=async ()=>{
-      try{
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${import.meta.env.VITE_WEATHER_API_KEY}`,{
-          headers:{
-            Accept:"application/json"
-          }
+ const getWeatherData = async () => {
+    try {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${import.meta.env.VITE_WEATHER_API_KEY}`, {
+            headers: {
+                Accept: "application/json"
+            }
         });
-        const data=await response.json();
+        const data = await response.json();
         console.log(data);
-        if(response.ok){
-          setWeatherData(data);
-        }else {
+
+        if (response.ok) {
+            setWeatherData(data);
+            setError(""); // Clear any previous errors on success
+        } else {
+            setWeatherData(null);
+            setError("City not found. Please check the spelling and try again."); // Set error message
+            console.log("City not found");
+        }
+    } catch (error) {
+        console.log(error);
         setWeatherData(null);
-        console.log("City not found");
-      }
-      }catch(error){
-        console.log(error)
-      }
-     
-    
+        setError("Something went wrong. Please check your internet connection."); // Handle network errors
     }
+}
      useEffect(() => {
      getWeatherData(); 
       }, []); 
@@ -47,6 +51,11 @@ const App = () => {
           <Temperature data={weatherData} />
         </>
       )}
+      {error && (
+    <div className="error-message">
+        {error}
+    </div>
+)}
     </div>
   )
 }

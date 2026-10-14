@@ -27,3 +27,8 @@
   background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
 }
 
+.error-message{
+  color: azure;
+  padding-top:100px ;
+}
+
